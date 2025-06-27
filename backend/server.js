@@ -13,6 +13,8 @@ const PORT = process.env.PORT || 5000;
 app.use(cors({
   origin: 'https://project-0-devangkatarkars-projects.vercel.app/', // 🔁 REPLACE with your actual frontend URL
   methods: ['POST'],
+  credentials: true,
+
 }));
 app.use(express.json());
 
