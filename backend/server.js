@@ -10,12 +10,7 @@ const app = express();
 const PORT = process.env.PORT || 5000;
 
 // Middleware
-app.use(cors({
-  origin: 'https://project-0-iota-puce.vercel.app/', // 🔁 REPLACE with your actual frontend URL
-  methods: ['POST'],
-  credentials: true,
-
-}));
+app.use(cors()); // allows all origins
 app.use(express.json());
 
 app.post('/api/contact', async (req, res) => {
