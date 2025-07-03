@@ -15,14 +15,14 @@ const Hero = () => {
       <h1 className="text-5xl sm:text-6xl font-extrabold text-blue-400 mb-4 animate-fade-in-up"></h1>
       <a
         href="#projects"
-        className="bg-blue-600 text-white px-6 py-3 rounded-full text-lg hover:bg-blue-700 transition"
+        className="bg-blue-600 text-white px-6 py-3 rounded-full text-lg hover:bg-blue-700 transition hover:scale-105 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50 mb-4"
       >
         View My Work
       </a>
       <a
   href="/resume.pdf"  // Place your actual file in public/
   download
-  className="text-blue-600 dark:text-blue-400 underline hover:text-blue-800"
+  className="border-slate-500 hover:border-blue-400 px-8 py-4 rounded-full text-lg font-semibold transition-all hover:bg-blue-400/10"
 >
   Download Resume
 </a>
