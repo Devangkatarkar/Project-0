@@ -29,8 +29,9 @@ const Contact = () => {
       });
 
       const data = await res.json();
-
+console.log(data);
       if (res.ok) {
+        console.log(res);
         alert('✅ Message sent successfully!');
         setFormData({ name: '', email: '', message: '' });
       } else {
